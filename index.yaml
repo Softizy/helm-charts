@@ -3,6 +3,26 @@ entries:
   yopass:
   - apiVersion: v2
     appVersion: 11.4.6
+    created: "2023-02-24T23:13:37.557644851Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 6.3.7
+    description: A Helm chart for Kubernetes
+    digest: bde876f31ab7da18071a138e585ed555168a1506c5f7e5fd7f06873d972c558a
+    icon: https://user-images.githubusercontent.com/37777956/59544367-0867aa80-8f09-11e9-8d6a-02008e1bccc7.png
+    maintainers:
+    - email: mickael@softizy.com
+      name: MickaelCA
+      url: https://www.softizy.com
+    name: yopass
+    type: application
+    urls:
+    - https://github.com/Softizy/helm-charts/releases/download/yopass-1.0.1/yopass-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 11.4.6
     created: "2023-02-24T22:45:44.68276131Z"
     dependencies:
     - condition: memcached.enabled
@@ -21,4 +41,4 @@ entries:
     urls:
     - https://github.com/Softizy/helm-charts/releases/download/yopass-1.0.0/yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-24T22:45:44.68277201Z"
+generated: "2023-02-24T23:13:37.557657551Z"
