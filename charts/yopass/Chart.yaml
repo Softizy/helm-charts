@@ -2,7 +2,7 @@ apiVersion: v2
 name: yopass
 description: A Helm chart for Kubernetes
 type: application
-version: 1.0.0
+version: 1.0.1
 appVersion: "11.4.6"
 icon: https://user-images.githubusercontent.com/37777956/59544367-0867aa80-8f09-11e9-8d6a-02008e1bccc7.png
 maintainers:
