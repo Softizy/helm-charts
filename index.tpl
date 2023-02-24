@@ -116,10 +116,10 @@
       <h2>Usage</h2>
 
       <pre class="snippet" lang="no-highlight" style="padding: 0">
-        <button class="btn" data-clipboard-snippet="helm repo add softizy https://charts.softizy.io/">
+        <button class="btn" data-clipboard-snippet="helm repo add softizy https://charts.softizy.com/">
           <img class="clippy" src="_images/clippy.svg" alt="Copy to clipboard" width="13">
         </button>
-        <code>helm repo add softizy https://charts.softizy.io/</code>
+        <code>helm repo add softizy https://charts.softizy.com/</code>
       </pre>
 
       <h2>How they are built</h2>
