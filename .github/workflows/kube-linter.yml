@@ -20,3 +20,9 @@ jobs:
 #        with:
 #          directory: charts/sample
 #          config: .kube-linter.yaml
+#      - name: Run on sample
+#        id: kube-lint-scan
+#        uses: stackrox/kube-linter-action@v1
+#        with:
+#          directory: charts/sample
+#          config: .kube-linter.yaml

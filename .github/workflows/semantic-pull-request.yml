@@ -1,0 +1,27 @@
+name: "Lint PR"
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - labeled
+      - unlabeled
+    branches:
+      - 'main'
+
+permissions: {}
+
+jobs:
+  main:
+    name: Semantic Pull Request
+    permissions:
+      pull-requests: read
+      statuses: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR title
+        uses: amannn/action-semantic-pull-request@v5.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
