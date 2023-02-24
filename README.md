@@ -1,3 +1,5 @@
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/softizy)](https://artifacthub.io/packages/search?repo=softizy)
+![Release](https://github.com/softizy/helm-charts/actions/workflows/release.yml/badge.svg)
 # Softizy Helm Charts
 
 Softizy helm charts repository
