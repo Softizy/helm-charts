@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "coredns.fullname" . }}-config
+  labels:
+    {{- include "coredns.labels" . | nindent 4 }}
+data:
+  Corefile: |
+    . {
+        log
+        errors
+        auto
+        reload 10s
+        ready
+        health {
+            lameduck 5s
+        }
+        {{- range $domain, $zonefile := .Values.dnsZones }}
+        file /etc/coredns/db.{{ $domain }}
+        {{- end }}
+    }
+  {{- range $domain, $zonefile := .Values.dnsZones }}
+  db.{{ $domain }}: |
+    {{- $zonefile | nindent 4 }}
+  {{- end }}
