@@ -6,7 +6,7 @@ metadata:
     {{- include "coredns.labels" . | nindent 4 }}
 data:
   Corefile: |
-    . {
+    .:1053 {
         log
         errors
         auto

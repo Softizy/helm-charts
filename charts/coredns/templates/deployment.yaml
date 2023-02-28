@@ -38,7 +38,7 @@ spec:
               name: coredns-config
           ports:
             - name: dns
-              containerPort: 53
+              containerPort: 1053
               protocol: UDP
             - name: health
               containerPort: 8081
