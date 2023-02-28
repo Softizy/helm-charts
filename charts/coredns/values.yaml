@@ -32,6 +32,8 @@ podAnnotations: {}
 
 service:
   type: ClusterIP
+  # -- Set a fixed ClusterIP
+  clusterIP: ""
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
