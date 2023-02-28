@@ -26,3 +26,9 @@ jobs:
         with:
           directory: charts/yopass
           config: .kube-linter.yaml
+      - name: Run on coredns
+        id: kube-lint-scan
+        uses: stackrox/kube-linter-action@v1
+        with:
+          directory: charts/coredns
+          config: .kube-linter.yaml
