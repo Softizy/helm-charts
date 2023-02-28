@@ -14,14 +14,19 @@ on:
 permissions: {}
 
 jobs:
-  main:
+  semantic-check:
     name: Semantic Pull Request
-    permissions:
-      pull-requests: read
-      statuses: write
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Validate PR title
-        uses: amannn/action-semantic-pull-request@v5.0.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check PR commit messages
+        uses: gsactions/commit-message-checker@v1
+        with:
+          pattern: '^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: ([\w ])+([\s\S]*)'
+          flags: "g"
+          error: |
+            Commits must follow the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
+          checkAllCommitMessages: "true"
+          excludeTitle: "true"
+          excludeDescription: "true"
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
