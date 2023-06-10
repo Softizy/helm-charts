@@ -3,6 +3,21 @@ entries:
   coredns:
   - apiVersion: v2
     appVersion: 1.10.1
+    created: "2023-06-10T21:55:59.553463667Z"
+    description: A Helm chart for Kubernetes
+    digest: dd9ee762a430526fc428b5c0e46e863ac1c8e8c4a5b300ada16cd1cd599fdbbf
+    icon: https://coredns.io/images/CoreDNS_Colour_Horizontal.png
+    maintainers:
+    - email: mickael@softizy.com
+      name: MickaelCA
+      url: https://www.softizy.com
+    name: coredns
+    type: application
+    urls:
+    - https://github.com/Softizy/helm-charts/releases/download/coredns-0.2.0/coredns-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.10.1
     created: "2023-02-28T21:57:20.564133832Z"
     description: A Helm chart for Kubernetes
     digest: 1883ff331c91a14062b476a776f821f2c5ce2f3ca0801b1d0a9ba640b1e1546e
@@ -72,4 +87,4 @@ entries:
     urls:
     - https://github.com/Softizy/helm-charts/releases/download/yopass-1.0.0/yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-28T21:57:20.564152241Z"
+generated: "2023-06-10T21:55:59.553474767Z"
