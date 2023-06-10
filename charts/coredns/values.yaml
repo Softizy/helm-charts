@@ -32,6 +32,8 @@ podAnnotations: {}
 
 service:
   type: ClusterIP
+  # -- Service annotations
+  annotations: {}
   # -- Set a fixed ClusterIP
   clusterIP: ""
 
