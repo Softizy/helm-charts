@@ -26,7 +26,7 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
-          version: v3.10.0
+          version: v3.22.1
 
       - name: Add repositories
         run: |
@@ -35,7 +35,7 @@ jobs:
           done
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.5.0
+        uses: helm/chart-releaser-action@v1.9.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
@@ -59,7 +59,7 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
-          version: v3.10.0
+          version: v3.22.1
       - name: Run repo-html
         run: |
           helm plugin install https://github.com/halkeye/helm-repo-html
